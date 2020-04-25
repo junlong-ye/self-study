@@ -3,23 +3,21 @@
   <head>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 	<style>
-	
-		.page {
-			display: flex;
-			flex-direction: 'row';
+		.page1 {
+		  border-bottom: 1px solid;
+		  border-width: medium;
+		  border-color: lightgrey;
 		}
-	
-		.page div.left {
-			padding: 44px;
-			flex: 4;
+		
+		.page2 {
+		  border-bottom: 1px solid;
+		  border-width: medium;
+		  border-color: lightgrey;
 		}
-	
-		.page div.right {
-			flex: 6;
-		}
+		
 	
 		h1.main-heading {
-			margin-top: 12;
+			margin-top: 12px;
 			margin-bottom: 0;
 			
 			font-family: Roboto;
@@ -27,6 +25,17 @@
 			font-weight: bold;
 			font-size: 60px;
 			line-height: 70px;
+		}
+		
+		h1.heading {
+			margin-top: 65px;
+			margin-left: 77px;
+			
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 48px;
+			line-height: 56px;
 		}
 		
 		h2 {
@@ -37,14 +46,36 @@
 			line-height: 37px;	
 		}
 		
+		h3 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 36px;
+			line-height: 140%;
+		}
+		
 		li{
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
 		}
+			
+		.page1 {
+			display: flex;
+			flex-direction: 'row';
+		}
+	
+		.page1 div.left {
+			padding: 44px;
+			flex: 4;
+		}
+	
+		.page1 div.right {
+			flex: 6;
+		}
 		
-		.page .wrap {
+		.page1 .wrap {
 			margin-top: 75px;
 			
 			font-family: Roboto;
@@ -53,11 +84,12 @@
 			font-size: 24px;
 		}
 		
-		.page .wrap h2 {
-			margin-bottom: 16;
+			
+		.page1 .wrap h2 {
+			margin-bottom: 16px;
 		}
 		
-		.page .wrap strong {
+		.page1 .wrap strong {
 		
 		}
 		
@@ -67,12 +99,48 @@
 			background-size: cover;
 			height: 1080px;
 		}
+		
+		
+		.page2 h2{
+			margin-bottom: 0px;
+		}
+		
+		.page2 h3{
+			margin-top: 5px;
+		}
+		
+		.page2 .wrap {
+			margin-left: 113px;
+			
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+		}
+		
+		.persona {
+			 display: flex;
+			flex-direction: row;
+			margin-bottom: 320px;
+			margin-top: 213px;
+		}
+	
+		div.image1 {
+			background-image: url(iQPr1XkF5F0.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 50%;
+			width: 421px;
+			height: 421px;
+			margin-left: 426px;
+		}
+		
     </style>
     <meta charset="utf-8">
     <title>Self-Studying</title>
   </head>
   <body>
-	<div class="page">
+	<div class="page1">
 		<div class="left">
 			<h1 class="main-heading">Self-Studying</h1>
 			
@@ -106,6 +174,21 @@
 			</div>
 		</div>
 		<div class="right"></div>
+	</div>
+	<div class="page2">
+		<h1 class="heading">Persona</h1>
+		<div class="persona">
+			<div class="image1"></div>		
+			<div class="wrap">
+				<h2>Jane Learner, 28</h2>
+				<h3>Tech worker</h3>
+				<ul>
+					<li>She wants to study for a test to obtain a certification in technology</li>
+					<li>She wants to learn more about the area she works for</li>
+					<li>She wants to stay organized and motivated to achieve learning goals</li>
+				</ul>
+			</div>
+		</div>
 	</div>
   </body>
 </html>
