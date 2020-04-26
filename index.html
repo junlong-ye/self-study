@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	<!-- Theme style -->
+	<link rel="stylesheet" href="adminlte/dist/css/adminlte.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="adminlte/plugins/fontawesomefree/css/all.min.css">
 	<style>
 		.page1 {
 		  border-bottom: 1px solid;
@@ -66,7 +70,84 @@
 			font-weight: normal;
 			font-size: 24px;
 		}
-			
+				
+		:not(.layout-fixed) .main-sidebar{
+			position:fixed;
+		}
+		
+		.sidebar {
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		
+		.main-sidebar .SelfstudyLogo{
+			margin-left:20px;
+		}
+		
+		.main-sidebar .brand-text{
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: bold !important;
+			font-size: 18px;
+			line-height: 23px;
+			margin-left:8px;
+		}
+		.sidebar .nav-item {
+			border-bottom: 1px solid #dee2e6;
+			line-height: 20px;
+			font-weight: 600;
+			font-size: 16px;
+			margin-top: 0px;
+		}	
+		
+		.sidebar .nav-item p{
+		    display: inline-block;
+			margin-left: 10px;
+			font-family: Source Sans Pro;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		
+		.sidebar .nav-item i{
+		    display: inline-block;
+			padding-left: $nav-link-padding-x - .2;
+			margin-right: 0px;
+		}
+		
+		.studyIcon {
+			background: url('studyIcon.png');
+			background-repeat: no-repeat;
+			width: 18px;
+			height: 18px;
+		}
+		
+		.challengeIcon {
+			background: url('challengeIcon.png');
+			background-repeat: no-repeat;
+			width: 18px;
+			height: 18px;
+		}
+		
+		
+		.newspaperIcon {
+			background: url('newspaperIcon.png');
+			background-repeat: no-repeat;
+			width: 18px;
+			height: 18px;
+		}
+		
+		.bookIcon {
+			background: url('bookIcon.png');
+			background-repeat: no-repeat;
+			width: 18px;
+			height: 18px;
+		}
+		
+		
 		.page1 {
 			display: flex;
 			flex-direction: 'row';
@@ -293,84 +374,191 @@
     <meta charset="utf-8">
     <title>Self-Studying</title>
   </head>
-  <body>
-	<div class="page1">
-		<div class="left">
-			<h1 class="main-heading">Self-Studying</h1>
-			
-			<div class="wrap">
-				<h2>Project Scope</h2>
-				<ul>
-					<li>Learning path</li>
-				</ul>
-			</div>
-			
-			<div class="wrap">
-				<h2>Target Audience</h2>
-				<strong>Adult learners who likes to</strong>
-				<ul>
-					<li>Obtain new skills to advance their careers or start a profession</li>
-				</ul>
-			</div>
+  <body class="sidebar-mini control-sidebar-slide-open" style="height: auto;">
+		<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+			  </li>
+			  <li class="nav-item d-none d-sm-inline-block">
+				<a href="index3.html" class="nav-link">Home</a>
+			  </li>
+			</ul>
 
-			<div class="wrap">
-				<h2>User Goals</h2>
-				<ul>
-					<li>Track personal learning progress to stay organized (Personalization)</li>
-					<li>Complete learning challenges to stay motivated (Motivation/Challenges)</li>
-					<li>Share learnings with friends, and community (Community)</li>
+			<!-- SEARCH FORM -->
+			<form class="form-inline ml-3">
+			  <div class="input-group input-group-sm">
+				<input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+				<div class="input-group-append">
+				  <button class="btn btn-navbar" type="submit">
+					<i class="fas fa-search"></i>
+				  </button>
+				</div>
+			  </div>
+			</form>
+
+			<!-- Right navbar links -->
+			<ul class="navbar-nav ml-auto">
+			  <!-- Messages Dropdown Menu -->
+			  <li class="nav-item dropdown">
+				<a class="nav-link" data-toggle="dropdown" href="#">
+				  <i class="far fa-comments"></i>
+				  <span class="badge badge-danger navbar-badge">3</span>
+				</a>
+			  </li>
+			  <!-- Notifications Dropdown Menu -->
+			  <li class="nav-item dropdown">
+				<a class="nav-link" data-toggle="dropdown" href="#">
+				  <i class="far fa-bell"></i>
+				  <span class="badge badge-warning navbar-badge">15</span>
+				</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i class="fas fa-th-large"></i></a>
+			  </li>
+			</ul>
+		</nav>
+		<aside class="main-sidebar sidebar-light-primary elevation-4">
+			<!-- Brand Logo -->
+			<a  class="brand-link">
+			  <img src="SelfStudyLogo.png"  class="SelfstudyLogo" style="opacity: .8">
+			  <span class="brand-text font-weight-light">Self Study</span>
+			</a>
+
+			<!-- Sidebar -->
+			<div class="sidebar">
+			  <!-- Sidebar user panel (optional) -->
+			  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+				<div class="image">
+				  <img src="iQPr1XkF5F0.jpg" class="img-circle">
+				</div>
+				<div class="info">
+				  <a href="#" class="d-block">First Last Name</a>
+				</div>
+			  </div>
+			  <!-- Sidebar Menu -->
+			  <nav class="mt-2">
+				<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+				  <!-- Add icons to the links using the .nav-icon class
+					   with font-awesome or any other icon font library -->
+				  <li class="nav-item pb-3 mb-3 d-flex">
+					<a href="#" class="nav-link">
+					<i class="nav-icon studyIcon"></i>
+					  <p>
+						My Study Dashboards
+					  </p>
+					</a>
+				  </li>
+				  <li class="nav-item pb-3 mb-3 d-flex">
+					<a href="#" class="nav-link">
+					  <i class="nav-icon challengeIcon"></i>
+					  <p>
+						Challenge with friends
+					  </p>
+					</a>
+				  </li>
+				   <li class="nav-item pb-3 mb-3 d-flex">
+					<a href="#" class="nav-link">
+					  <i class="nav-icon newspaperIcon"></i>
+					  <p>
+						Learning Feed
+					  </p>
+					</a>
+				  </li>
+				   <li class="nav-item pb-3 mb-3 d-flex">
+					<a href="#" class="nav-link">
+					  <i class="nav-icon bookIcon"></i>
+					  <p>
+						Study Resources
+					  </p>
+					</a>
+				  </li>
 				</ul>
+			  </nav>
+			  <!-- /.sidebar-menu -->
 			</div>
-						
-			<div class="wrap">
-				<h2>Challenges</h2>
-				How could we help users top stay motivated and organized during this COVID pandemic?
+			<!-- /.sidebar -->
+		</aside>
+		<div class="content-wrapper" style="min-height: 458px;">
+			<div class="page1">
+				<div class="left">
+					<h1 class="main-heading">Self-Studying</h1>
+					
+					<div class="wrap">
+						<h2>Project Scope</h2>
+						<ul>
+							<li>Learning path</li>
+						</ul>
+					</div>
+					
+					<div class="wrap">
+						<h2>Target Audience</h2>
+						<strong>Adult learners who likes to</strong>
+						<ul>
+							<li>Obtain new skills to advance their careers or start a profession</li>
+						</ul>
+					</div>
+
+					<div class="wrap">
+						<h2>User Goals</h2>
+						<ul>
+							<li>Track personal learning progress to stay organized (Personalization)</li>
+							<li>Complete learning challenges to stay motivated (Motivation/Challenges)</li>
+							<li>Share learnings with friends, and community (Community)</li>
+						</ul>
+					</div>
+								
+					<div class="wrap">
+						<h2>Challenges</h2>
+						How could we help users top stay motivated and organized during this COVID pandemic?
+					</div>
+				</div>
+				<div class="right"></div>
 			</div>
-		</div>
-		<div class="right"></div>
-	</div>
-	<div class="page2">
-		<h1 class="heading">Persona</h1>
-		<div class="persona">
-			<div class="image1"></div>		
-			<div class="wrap">
-				<h2>Jane Learner, 28</h2>
-				<h3>Tech worker</h3>
-				<ul>
-					<li>She wants to study for a test to obtain a certification in technology</li>
-					<li>She wants to learn more about the area she works for</li>
-					<li>She wants to stay organized and motivated to achieve learning goals</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="page3">
-		<h1 class="heading">User flow for <br>onboarding</br></h1>
-		<div class="wrap">
-			<div class="line">
-				<hr/>
-				<div>
-					<span id="p1" class="dot"></span>
-					<span id="p2" class="dot"></span>
-					<span id="p3" class="dot"></span>
-					<span id="p4" class="dot"></span>
-					<span id="p5" class="dot"></span>
-					<span id="p6" class="dot"></span>
+			<div class="page2">
+				<h1 class="heading">Persona</h1>
+				<div class="persona">
+					<div class="image1"></div>		
+					<div class="wrap">
+						<h2>Jane Learner, 28</h2>
+						<h3>Tech worker</h3>
+						<ul>
+							<li>She wants to study for a test to obtain a certification in technology</li>
+							<li>She wants to learn more about the area she works for</li>
+							<li>She wants to stay organized and motivated to achieve learning goals</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<ul>
-			  <li id="t1" >Enters the <br>application</br></li>
-			  <li id="t2" >Views learning path <br>templates</br></li>
-			  <li id="t3" >Selects one learning <br/> path and makes it <br/> 'Open to public'</li>
-			  <li id="t4">Edits learning path to <br>customize</br></li>
-			  <li id="t5" >Click 'Start  <br/> learning path' to begin</li>
-			  <li id="t6" >Receives alerts  <br/> about upcoming  <br/> tasks and completes  <br/> them</li>
-			</ul> 
+			<div class="page3">
+				<h1 class="heading">User flow for <br>onboarding</br></h1>
+				<div class="wrap">
+					<div class="line">
+						<hr/>
+						<div>
+							<span id="p1" class="dot"></span>
+							<span id="p2" class="dot"></span>
+							<span id="p3" class="dot"></span>
+							<span id="p4" class="dot"></span>
+							<span id="p5" class="dot"></span>
+							<span id="p6" class="dot"></span>
+						</div>
+					</div>
+					<ul>
+					  <li id="t1" >Enters the <br>application</br></li>
+					  <li id="t2" >Views learning path <br>templates</br></li>
+					  <li id="t3" >Selects one learning <br/> path and makes it <br/> 'Open to public'</li>
+					  <li id="t4">Edits learning path to <br>customize</br></li>
+					  <li id="t5" >Click 'Start  <br/> learning path' to begin</li>
+					  <li id="t6" >Receives alerts  <br/> about upcoming  <br/> tasks and completes  <br/> them</li>
+					</ul> 
+				</div>
+				<div class="wrap">
+					<div class="image2"></div>		
+					<h2>Jane Learner, 28</h2>
+				</div>
+			</div>
 		</div>
-		<div class="wrap">
-			<div class="image2"></div>		
-			<h2>Jane Learner, 28</h2>
-		</div>
-	</div>
-  </body>
+	</body>
 </html>
