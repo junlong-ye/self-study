@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Layer 2 */
 
 position: absolute;
@@ -182,3 +183,68 @@ top: 55.57%;
 bottom: 38.73%;
 
 background: linear-gradient(127.19deg, #88C7B5 35.85%, #23B5B5 86.94%);
+=======
+.page {
+    display: flex;
+    flex-direction: 'row';
+}
+
+.page div.left {
+    padding: 44px;
+    flex: 4;
+}
+
+.page div.right {
+    flex: 6;
+}
+
+h1.main-heading {
+    margin-top: 12;
+    margin-bottom: 0;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;	
+}
+
+li{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.page .wrap {
+    margin-top: 75px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.page .wrap h2 {
+    margin-bottom: 16;
+}
+
+.page .wrap strong {
+
+}
+
+div.right {
+    background-image: url(images/mimi-thian-vdXMSiX-n6M-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+}
+>>>>>>> 7e5236615a9e64fa9930d06f8819d760c819a7fb
